@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الأسئلة الرعب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- اسم اللعبة بخط مرعب -->
+        <h1 id="game-title">لعبة الأسئلة الرعب</h1>
+
+        <!-- غرفة اللعبة (الواجهة الرئيسية) -->
+        <div id="game-room">
+            <h2>أنت في غرفة مظلمة. حاول الهروب من خلال الإجابة على الأسئلة المرعبة!</h2>
+            <p>ابحث عن الإجابة الصحيحة، لكن كن حذرًا، قد يكون الوحش قريبًا...</p>
+            <button id="question-btn">السؤال التالي</button>
+            <button id="open-door-btn" disabled>افتح الباب</button>
+        </div>
+
+        <!-- شاشة نهاية اللعبة (الخسارة) -->
+        <div id="game-over-screen" style="display: none;">
+            <h2>لقد أمسك بك الوحش!</h2>
+            <button id="restart-btn">إعادة المحاولة</button>
+        </div>
+
+        <!-- شاشة الفوز -->
+        <div id="win-screen" style="display: none;">
+            <h2>تهانينا! لقد هربت بنجاح!</h2>
+            <button id="restart-win-btn">إعادة المحاولة</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
